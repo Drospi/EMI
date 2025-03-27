@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro de Honor - EMI</title>
+    <style>
+        :root {
+            --emi-blue: #003366;
+            --emi-gold: #FFD700;
+            --emi-light: #F0F8FF;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: var(--emi-blue);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        h1, h2 {
+            color: var(--emi-blue);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--emi-blue);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: var(--emi-light);
+        }
+        
+        .medal {
+            color: var(--emi-gold);
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escuela Militar de Ingeniería</h1>
+        <p>Cuadro de Honor</p>
+    </header>
+    
+    <main>
+        <h2>Estudiantes Destacados</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Nombre</th>
+                    <th>Carrera</th>
+                    <th>Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="medal">🥇</span>1°</td>
+                    <td>Ana María Fernández</td>
+                    <td>Ing. de Sistemas</td>
+                    <td>95.8</td>
+                </tr>
+                <tr>
+                    <td><span class="medal">🥈</span>2°</td>
+                    <td>Juan Carlos Rojas</td>
+                    <td>Ing. Civil</td>
+                    <td>94.2</td>
+                </tr>
+                <tr>
+                    <td><span class="medal">🥉</span>3°</td>
+                    <td>Luisa Patricia Méndez</td>
+                    <td>Ing. de Sistemas</td>
+                    <td>93.7</td>
+                </tr>
+                <tr>
+                    <td>4°</td>
+                    <td>Carlos Andrés Vargas</td>
+                    <td>Ing. Industrial</td>
+                    <td>92.9</td>
+                </tr>
+                <tr>
+                    <td>5°</td>
+                    <td>María José Sánchez</td>
+                    <td>Ing. de Sistemas</td>
+                    <td>92.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

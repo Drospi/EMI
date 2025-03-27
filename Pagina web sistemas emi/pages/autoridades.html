@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoridades - EMI</title>
+    <style>
+        :root {
+            --emi-blue: #003366;
+            --emi-gold: #FFD700;
+            --emi-light: #F0F8FF;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: var(--emi-blue);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        h1, h2 {
+            color: var(--emi-blue);
+        }
+        
+        .authority-card {
+            display: flex;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+        
+        .authority-img {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            margin-right: 1rem;
+            border: 2px solid var(--emi-gold);
+        }
+        
+        .authority-info {
+            flex: 1;
+        }
+        
+        .position {
+            color: var(--emi-blue);
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escuela Militar de Ingeniería</h1>
+        <p>Autoridades Institucionales</p>
+    </header>
+    
+    
+    <main>
+        <h2>Nuestras Autoridades</h2>
+        
+        <div class="authority-card">
+            <div class="authority-img"></div>
+            <div class="authority-info">
+                <h3>Gral. Juan Pérez</h3>
+                <p class="position">Comandante General de la EMI</p>
+                <p>Doctor en Ingeniería de Sistemas, con más de 20 años de experiencia en docencia e investigación.</p>
+            </div>
+        </div>
+        
+        <div class="authority-card">
+            <div class="authority-img"></div>
+            <div class="authority-info">
+                <h3>Cnl. María Gómez</h3>
+                <p class="position">Directora Académica</p>
+                <p>Magister en Educación Superior, especializada en pedagogía para ingenierías.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
