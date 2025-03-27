@@ -1,0 +1,317 @@
+:root {
+    --emi-blue: #003366;
+    --emi-gold: #FFD700;
+    --emi-light: #F0F8FF;
+    --emi-dark: #001a33;
+    --emi-red: #CC0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, var(--emi-blue), var(--emi-dark));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.emi.edu.bo/wp-content/uploads/2021/03/emi-logo.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--emi-gold);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 0.8rem;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--emi-gold);
+    color: var(--emi-blue);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 26, 51, 0.9)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    animation: fadeInUp 1s ease 0.2s forwards;
+    opacity: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 20px;
+}
+
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.teacher-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-header {
+    background: linear-gradient(135deg, var(--emi-blue), var(--emi-dark));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.teacher-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin: 0 auto 1rem;
+    display: block;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.teacher-title {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-department {
+    display: inline-block;
+    background-color: var(--emi-gold);
+    color: var(--emi-blue);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.teacher-body {
+    padding: 1.5rem;
+}
+
+.teacher-info {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.teacher-info i {
+    color: var(--emi-blue);
+    margin-right: 0.5rem;
+    width: 20px;
+    text-align: center;
+}
+
+.teacher-subjects {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #eee;
+}
+
+.teacher-subjects h5 {
+    color: var(--emi-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.subject-tag {
+    display: inline-block;
+    background-color: var(--emi-light);
+    color: var(--emi-blue);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.teacher-contact {
+    color: var(--emi-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.teacher-contact:hover {
+    color: var(--emi-dark);
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--emi-blue);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.badge-phd {
+    background-color: var(--emi-red);
+    color: white;
+}
+
+.badge-msc {
+    background-color: var(--emi-blue);
+    color: white;
+}
+
+.badge-lic {
+    background-color: var(--emi-gold);
+    color: var(--emi-blue);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .filter-bar {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+}
